@@ -1,0 +1,7 @@
+{
+    "LoginPageLocators":{
+        "username_text":"[name='username']",
+        "password_text":"[name='password']",
+        "login_button":".oxd-button"
+    }
+}

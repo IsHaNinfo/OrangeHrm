@@ -1,0 +1,28 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter mocha-allure-reporter",
+    "cypress:runner": "cypress open --e2e --browser chrome",
+    "cypress:execution": "cypress run --spec cypress/e2e/features/*",
+    "cypress:execution-tags": "cypress run --env tags=@mobile"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress-cucumber": "file:",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/TestCases"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.0",
+    "cypress": "^15.03.0",
+    "esbuild": "^0.25.10",
+    "webpack": "^5.102.0"
+  }
+}
