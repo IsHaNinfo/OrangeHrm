@@ -32,7 +32,7 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: Cypress_Cucumber_Test
+          working-directory: OrangeHrmTest
           install-command: npm install
           start: npx cypress run
         continue-on-error: true
