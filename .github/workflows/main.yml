@@ -86,7 +86,7 @@ jobs:
         if: always()
         uses: simple-elf/allure-report-action@master
         with:
-          allure_results: Cypress_Cucumber_Test/allure-results
+          allure_results: OrangeHrmTest/allure-results
           gh_pages: allure-history
 
       # Step 13: Deploy Allure Report to GitHub Pages
