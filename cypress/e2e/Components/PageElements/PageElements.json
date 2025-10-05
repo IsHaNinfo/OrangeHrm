@@ -5,5 +5,10 @@
         "login_button":".oxd-button",
         "error":".oxd-alert",
         "required_message":".oxd-input-group > .oxd-text"
+    },
+    "DashboardLocators":{
+        "search_box":".oxd-input",
+        "welcome_text":".oxd-userdropdown-name",
+        "menu_item":".oxd-main-menu-item"
     }
 }
