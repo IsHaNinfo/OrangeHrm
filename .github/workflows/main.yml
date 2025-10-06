@@ -18,9 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 2: Install Java Runtime Environment to run the .jar file
-
-      # Step 3: Start the backend by running the .jar file in the background
      
       # Step 4: Set up Node.js
       - name: Set up Node.js
