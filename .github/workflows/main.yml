@@ -29,7 +29,6 @@ jobs:
       - name: Cypress Run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: OrangeHrm
           install-command: npm install
           start: npx cypress run
         continue-on-error: true
@@ -83,7 +82,7 @@ jobs:
         if: always()
         uses: simple-elf/allure-report-action@master
         with:
-          allure_results: OrangeHrm/allure-results
+          allure_results: allure-results
           gh_pages: allure-history
 
       # Step 13: Deploy Allure Report to GitHub Pages
