@@ -3,9 +3,7 @@ import urls from '../../../support/urls.js'
 
 class LoginPage {
     uname(username) {
-        cy.get(PageElements.LoginPageLocators.username_text).type(username)
-            .clear()
-            .type(username)
+        cy.get(PageElements.LoginPageLocators.username_text, { timeout: 10000 }).should('be.visible').clear().type(username)
         return;
     }
     password(password) {
@@ -19,7 +17,7 @@ class LoginPage {
         return;
     }
     blankpassword() {
-        cy.get(PageElements.LoginPageLocators.password_text).clear(); 
+        cy.get(PageElements.LoginPageLocators.password_text).clear();
         return// Focus and blur to trigger validation
     }
 

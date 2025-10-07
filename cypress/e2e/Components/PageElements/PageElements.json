@@ -9,6 +9,19 @@
     "DashboardLocators":{
         "search_box":".oxd-input",
         "welcome_text":".oxd-userdropdown-name",
-        "menu_item":".oxd-main-menu-item"
+        "menu_item":".oxd-main-menu-item",
+        "recruitment_menu":":nth-child(5) > .oxd-main-menu-item",
+        "recruitment_add_button":".orangehrm-header-container > .oxd-button",
+        "candidatefirstname_text":"[name='firstName']",
+        "candidatelastname_text":"[name='lastName']",
+        "candidate_select_text":".oxd-select-text",
+        "email_text":"nth-child(3) > .oxd-grid-3 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input",
+        "cantact_number":".oxd-grid-3 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
+        "vecanccy_text":".oxd-select-text",
+        "keywords_text":".orangehrm-save-candidate-page-full-width > .oxd-input-group > :nth-child(2) > .oxd-input')",
+        "Date_text":".oxd-date-input > .oxd-input",
+        "note_text":".oxd-textarea > .oxd-textarea-textarea",
+        "save_button":".oxd-button--secondary"
+
     }
 }

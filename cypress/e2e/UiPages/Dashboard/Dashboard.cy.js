@@ -11,6 +11,15 @@ const DashboardPage = {
     menuItem(){
         cy.get(PageElements.DashboardLocators.menu_item).should('be.visible');
         return;
+    },
+    
+    recruitmentMenu(){
+        cy.get(PageElements.DashboardLocators.recruitment_menu).click();
+        return;
+    },
+    recruitmentAddButton(){
+        cy.get(PageElements.DashboardLocators.recruitment_add_button).should('be.visible').click();
+        return;
     }
 }
 
